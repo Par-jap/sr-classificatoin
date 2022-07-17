@@ -12,7 +12,7 @@ It provide items [lr-letter, hr-letter, labels]
 
 
 from torch.utils.data import Dataset
-import torchvision.datasets.MNIST
+import torchvision.datasets
 from torchvision import transforms
 from torchvision.transforms import InterpolationMode
 
