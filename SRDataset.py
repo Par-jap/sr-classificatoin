@@ -46,7 +46,7 @@ class SRMNIST(Dataset):
     return self.inputs[index], self.targets[index], self.labels[index]
 
 class fastMNIST(Dataset):
-    def __init__(self, input_size= (14,14), output_size= (28,28) ):
+    def __init__(self, root="./mnist"):
         mnist_data = torchvision.datasets.MNIST(
         './MNIST', 
         train=True, download=True, transform=transforms.ToTensor())
