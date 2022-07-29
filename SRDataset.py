@@ -54,7 +54,7 @@ class fastMNIST(Dataset):
         self.datalist = list(mnist_data)
 
     def __len__(self):
-        return len(self.inputs)
+        return len(self.datalist)
 
     def __getitem__(self, index):
         return self.datalist[index]
