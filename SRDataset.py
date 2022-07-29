@@ -48,8 +48,7 @@ class SRMNIST(Dataset):
 class fastMNIST(Dataset):
     def __init__(self, root="./mnist"):
         mnist_data = torchvision.datasets.MNIST(
-        './MNIST', 
-        train=True, download=True, transform=transforms.ToTensor())
+        root=root, train=True, download=True, transform=transforms.ToTensor())
         
         self.datalist = list(mnist_data)
 
